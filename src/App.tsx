@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import { createGlobalStyle } from "styled-components";
+import Auth from './components/Auth/Auth';
+import Landing from './components/Landing/Landing';
+import NotFound from './components/NotFound/NotFound';
 
-function App() {
+const GlobalStyles = createGlobalStyle`
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: #F1F3F8;
+  }
+`;
+
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter> 
+      <GlobalStyles />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/authorization" element={<Auth />} /> 
+        
+        <Route path="*" element={<NotFound />} /> 
+      </Routes>
+    </BrowserRouter>
+  )
 }
-
-export default App;
