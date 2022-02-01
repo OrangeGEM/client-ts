@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+interface Props {
+    fontStyle?: string;
+    fontWeight?: string;
+    fontSize?: string;
+    lineHeight?: string;
+    textAlign?: string;
+    letterSpacing?: string;
+    textTransform?: string;
+    textColor?: string;
+    align?: string;
+    opacity?: string;
+}
+
 /**
  * @param {string} fontStyle - normal | italic | oblique | inherit
  * @param {string} fontWeight - bold | bolder | lighter | normal | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
@@ -10,7 +23,7 @@ import styled from "styled-components";
  * @param {string} textTransform = capitalize | lowercase | uppercase | none | inherit
  * @param {string} textColor = HEX 
  */
-export const EpilogueText = styled.div`
+export const EpilogueText = styled.div<Props>`
     font-family: Epilogue;
     font-style: ${props => props.fontStyle || "normal"};
     font-weight: ${props => props.fontWeight || "normal"};
@@ -21,6 +34,7 @@ export const EpilogueText = styled.div`
     text-transform: ${props => props.textTransform || "none"};
 
     color: ${props => props.color || "#393B44"};
+    opacity: ${props => props.opacity || "1"};
 `;
 
 /**
@@ -33,7 +47,7 @@ export const EpilogueText = styled.div`
  * @param {string} textTransform = capitalize | lowercase | uppercase | none | inherit
  * @param {string} textColor = HEX 
  */
-export const DMMonoText = styled.div`
+export const DMMonoText = styled.div<Props>`
     font-family: DM Mono;
     font-style: ${props => props.fontStyle || "normal"};
     font-weight: ${props => props.fontWeight || "normal"};
@@ -44,4 +58,5 @@ export const DMMonoText = styled.div`
     text-transform: ${props => props.textTransform || "none"};
 
     color: ${props => props.textColor || "#393B44"};
+    opacity: ${props => props.opacity || "1"};
 `;

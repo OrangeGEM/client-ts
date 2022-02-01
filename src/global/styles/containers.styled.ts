@@ -9,8 +9,8 @@ export const RowContainer = styled.div`
 `
 
 /**
-* Container with direction in column
-*/
+ * Container with direction in column
+ */
 export const ColumnContainer = styled.div`
     display: flex;
     flex-direction: column;
