@@ -1,5 +1,4 @@
 import React from 'react'
-import { colors } from '../../global/params/colors';
 
 import Header from './Header/Header';
 import Main from './Main/Main';
