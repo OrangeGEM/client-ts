@@ -48,5 +48,9 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.21"
+  },
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=17.0.0"
   }
 }
