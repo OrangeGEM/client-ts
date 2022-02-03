@@ -1,8 +1,18 @@
 import React from 'react'
 
+import Header from './Header/Header';
+import Main from './Main/Main';
+
+import { Container, Content } from './styled'
+
 export default function Landing() {
 
   return (
-    <h1> Landing </h1>
+    <Container>
+      <Content>
+        <Header />
+        <Main />
+      </Content>
+    </Container> 
   )
 }
