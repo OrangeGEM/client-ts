@@ -1,0 +1,45 @@
+{
+    "default_stated": "Get started",
+
+    "landing": {
+        "header": {
+            "button": "My queues"
+        },
+        "getStarted": {
+            "title": "Fast, simple & convenient",
+            "description": "Сreate and manage a queue of your clients. Customers do not need to download the app and register — they can queue and receive notifications via SMS"
+        },
+        "rightNow": {
+            "rightNow": "Right now",
+            "description": "Send an SMS with the keyword BREWER to the service number +16138006817 and get your place in the queue"
+        },
+        "steps": {
+            "step_1": {
+                "title": "How it works",
+                "steper": "Step 1",
+                "description": "Register in the service. Simple, fast and clear."
+            },
+            "step_2": {
+                "steper": "Step 2",
+                "description": "You create a new queue for your clients and tell them the unique keyword."
+            },
+            "step_3": {
+                "steper": "Step 3",
+                "description": "The client sends the unique keyword to the service number and receives the sequence number in this queue."
+            },
+            "step_4": {
+                "steper": "Step 4",
+                "description": "The client receives an SMS notification that their turn has come. "
+            }
+        },
+        "startNow": {
+            "title": "Start now",
+            "description": "And you get the opportunity to control the entire process."
+        },
+        "footer": {
+            "login": "Log in",
+            "contact": "Contact us",
+            "about": "About"
+        }
+    }
+}
